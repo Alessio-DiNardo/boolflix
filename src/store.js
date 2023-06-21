@@ -1,7 +1,7 @@
 import { reactive } from "vue";
 
 const store = reactive( {
-    searchText: "",
+    searchText: "STORE",
     loading: true,
 })
 
