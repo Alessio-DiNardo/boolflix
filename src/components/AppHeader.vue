@@ -7,7 +7,7 @@
     </div>
 </template>
 <script>
-
+import { store } from '../store.js';
 export default {
 
     name: 'AppHeader',
@@ -16,7 +16,7 @@ export default {
     },
     data() {
         return {
-            
+            store,
         }
     },
 }
