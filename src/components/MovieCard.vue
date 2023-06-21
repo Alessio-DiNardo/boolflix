@@ -7,7 +7,10 @@
 </template>
 <script>
 export default {
-    name: 'AppMovie', 
+    name: 'MovieCard', 
+    props: {
+
+    },
     data() {
         return {
             

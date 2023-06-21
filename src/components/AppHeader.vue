@@ -1,18 +1,18 @@
 <template>
     <div>
         <h2>
-            MovieList
+            AppHeader
         </h2>
         <AppMovie/>
     </div>
 </template>
 <script>
-import AppMovie from './AppMovie.vue'
+
 export default {
 
-    name: 'MovieList',
+    name: 'AppHeader',
     components: {
-        AppMovie,
+        AppHeader,
     },
     data() {
         return {

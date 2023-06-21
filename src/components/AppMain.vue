@@ -6,17 +6,17 @@
         <h2>
             {{ store.searchText }}
         </h2>
-        <MovieList/>
+        <MovieCard/>
     </div>
 </template>
 <script>
-import MovieList from './MovieList.vue'
+import MovieCard from './MovieCard.vue'
 import {store} from '../store'
 export default {
     
     name: 'AppMain',
     components: {
-        MovieList,
+        MovieCard
     },
     data() {
         return {
