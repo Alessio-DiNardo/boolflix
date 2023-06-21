@@ -6,6 +6,7 @@
     </div>
 </template>
 <script>
+import { store } from '../store.js';
 export default {
     name: 'MovieCard', 
     props: {
@@ -13,7 +14,7 @@ export default {
     },
     data() {
         return {
-            
+            store,
         }
     },
 }
