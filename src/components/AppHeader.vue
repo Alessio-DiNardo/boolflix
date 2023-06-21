@@ -1,8 +1,8 @@
 <template>
     <div>
         <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search the movie" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="Search the movie" aria-label="Search" v-model="store.movie">
+            <button class="btn btn-outline-success" @click="$emit('movie', store.movie)" type="submit">Search</button>
         </form>
     </div>
 </template>
