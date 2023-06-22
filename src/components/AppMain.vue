@@ -1,4 +1,5 @@
 <template>
+    <h1>BOOLFLIX</h1>
     <div v-for="movie in store.movieList">
         <h1>
                 Title: {{ movie.title }}
