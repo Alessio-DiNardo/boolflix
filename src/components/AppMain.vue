@@ -45,7 +45,7 @@ export default {
             console.log(movie);
             axios.get(this.apiUri, {
                 params: {
-                    api_Key: this.api_Key,
+                    api_Key: this.apiKey,
                     query: movie,
                 }
             })

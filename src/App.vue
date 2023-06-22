@@ -6,30 +6,21 @@ import { store } from './store.js';
 export default {
     name: 'App', 
     components: {
-      AppMain,
-      AppHeader,
+        AppMain,
+        AppHeader,
     },
     data() {
         return {
             store,
         }
     },
-    created(){
-                axios.get('')
-                .then( (response) => {
-                console.log(response);
-                
-            })
-                .catch(function (error) {
-                console.log(error);
-        })
-    }
+    
 }
 </script>
 
 <template>
-  <AppMain/>
-  <AppHeader/>
+    <AppMain/>
+    <AppHeader/>
 </template>
 
 <style lang="scss">
