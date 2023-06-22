@@ -1,5 +1,18 @@
 <template>
-    
+    <div v-for="movie in store.movieList">
+        <h1>
+                Title: {{ movie.title }}
+        </h1>
+        <h2>
+            Original title: {{ movie.original_title }}
+        </h2>
+        <p>
+            Language: {{ movie.original_language }}
+        </p>
+        <p>
+            Rating: {{ movie.vote_average }}
+        </p>
+    </div>
 
 
 
