@@ -12,15 +12,32 @@ export default {
     data() {
         return {
             store,
+            apiUri: 'https://api.themoviedb.org/3/search/movie?',
+            api_Key: '0de59865ade9fe62fa14d1dc51b0fa54'
         }
     },
+    methods: {
+        searchMovie(movie){
+            console.log(movie);
+            axios.get(this.apiUri, {
+                params: {
+                    api_Key: this.apiKey,
+                    query: movie,
+                }
+            })
+            .then((response) => {
+                console.log(response.data.results);
+                this.store.movieList = response.data.results
+            })
+        }
+    }
     
 }
 </script>
 
 <template>
     <AppMain/>
-    <AppHeader/>
+    <AppHeader @movie="searchMovie" />
 </template>
 
 <style lang="scss">
