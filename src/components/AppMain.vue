@@ -36,7 +36,7 @@ export default {
         return {
             store,
             apiUri: 'https://api.themoviedb.org/3/search/movie?',
-            api_Kei: '0de59865ade9fe62fa14d1dc51b0fa54'
+            api_Key: '0de59865ade9fe62fa14d1dc51b0fa54'
         }
     },
 
@@ -45,7 +45,7 @@ export default {
             console.log(movie);
             axios.get(this.apiUri, {
                 params: {
-                    api_Kei: this.api_Kei,
+                    api_Key: this.api_Key,
                     query: movie,
                 }
             })
