@@ -29,6 +29,7 @@ export default {
                 params: {
                     api_key: '0de59865ade9fe62fa14d1dc51b0fa54',
                     query : searchedInput,
+                    num : 40,
                 }
             })
             .then( (response) => {
