@@ -2,15 +2,16 @@
     
 </template>
 <script>
-import { store } from '../store.js';
+
 export default {
-    name: 'MovieCard', 
-    props: {
+    
+    name: 'MovieList',
+    components: {
 
     },
     data() {
         return {
-            store,
+            
         }
     },
 }

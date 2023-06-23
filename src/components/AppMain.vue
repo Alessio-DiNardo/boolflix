@@ -1,38 +1,24 @@
 <template>
     <h1>BOOLFLIX</h1>
-    <div v-for="movie in store.movieList">
-        <h1>
-                Title: {{ movie.title }}
-        </h1>
-        <h2>
-            Original title: {{ movie.original_title }}
-        </h2>
-        <p>
-            Language: {{ movie.original_language }}
-        </p>
-        <p>
-            Rating: {{ movie.vote_average }}
-        </p>
-    </div>
+        <UserSearchbar/>
+        <MoviesList/>
 
-
-
-    <MovieCard/>
     
     
 </template>
 <script>
-import MovieCard from './MovieCard.vue'
-import {store} from '../store'
+import UserSearchbar from './UserSearchbar.vue';
+import MoviesList from './MoviesList.vue';
 export default {
     
     name: 'AppMain',
     components: {
-        MovieCard,
+        UserSearchbar,
+        MoviesList,
     },
     data() {
         return {
-            store,
+            
         }
     },
 }
