@@ -1,7 +1,7 @@
 <template>
     <div>
         <input type="text" name="user-search" id="user-search" v-model="searchInput">
-        <button @click="log(searchInput)" >search</button>
+        <button @click="$emit('searched',searchInput)" >search</button>
     </div>
     
     
@@ -15,14 +15,15 @@ export default {
     },
     data() {
         return {
-            searchInput : ''
+            
         }
     },
     methods: {
         log(message){
             console.warn(message)
-        }
-    }
+        },
+        
+    },
 }
 </script>
 <style lang="scss" scoped>
